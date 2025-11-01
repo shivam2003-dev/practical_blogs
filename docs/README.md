@@ -8,16 +8,16 @@ This documentation is organized by semester and subject, providing in-depth cove
 
 Explore the four core subjects:
 
-### 🧮 [Mathematical Foundations](semester-1/mathematical-foundations/)
+### 🧮 [Mathematical Foundations](semester-1/mathematical-foundations/README.md)
 Core mathematical concepts essential for AI and ML.
 
-### 🤖 [Machine Learning](semester-1/machine-learning/)
+### 🤖 [Machine Learning](semester-1/machine-learning/README.md)
 Fundamental machine learning concepts and techniques.
 
-### 📊 [Statistical Methods](semester-1/statistical-methods/)
+### 📊 [Statistical Methods](semester-1/statistical-methods/README.md)
 Statistical theory and methods for data analysis.
 
-### 🧠 [Deep Neural Networks](semester-1/deep-neural-networks/)
+### 🧠 [Deep Neural Networks](semester-1/deep-neural-networks/README.md)
 Deep learning architectures and advanced AI techniques.
 
 ---
