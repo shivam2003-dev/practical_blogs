@@ -10,6 +10,9 @@ Systems of linear equations, row reduction, echelon forms, pivots, free variable
 ### [System of Two Linear Equations](topics/system-two-linear-equations.md)
 Comprehensive guide to solving 2x2 systems using four different approaches: Determinant, Row Reduction, Graphical, and Rank methods.
 
+### [NumPy Matrix Functions Cheatsheet](topics/numpy-matrix-functions.md)
+Complete reference for NumPy matrix operations including array creation, linear algebra, matrix decomposition, statistical functions, and practical examples.
+
 ---
 
 [📚 References](references.md)
