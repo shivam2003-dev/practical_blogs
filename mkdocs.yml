@@ -77,6 +77,7 @@ nav:
     - "Topics":
       - "Linear Algebra": semester-1/mathematical-foundations/topics/linear-algebra.md
       - "System of Two Linear Equations": semester-1/mathematical-foundations/topics/system-two-linear-equations.md
+      - "NumPy Matrix Functions Cheatsheet": semester-1/mathematical-foundations/topics/numpy-matrix-functions.md
     - "References": semester-1/mathematical-foundations/references.md
   - "🤖 Machine Learning":
     - semester-1/machine-learning/README.md
