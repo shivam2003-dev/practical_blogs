@@ -693,11 +693,10 @@ A += 5  # More memory efficient
 |----------|--------------|
 | **Creation** | `array`, `zeros`, `ones`, `eye`, `random.rand`, `linspace`, `arange` |
 | **Basic Ops** | `+`, `-`, `*`, `@`, `dot`, `transpose`, `reshape` |
-| **Linear Algebra** | `inv`, `det`, `solve`, `eig`, `svd`, `qr`, `cholesky` |
-| **Decomposition** | `eig`, `svd`, `qr`, `cholesky` |
+| **Linear Algebra** | `inv`, `det`, `solve`, `eig`, `svd`, `qr`, `cholesky`, `norm`, `matrix_rank` |
 | **Statistics** | `mean`, `std`, `var`, `min`, `max`, `median`, `percentile` |
 | **Manipulation** | `vstack`, `hstack`, `concatenate`, `split`, `tile`, `repeat` |
-| **Advanced** | `kron`, `outer`, `inner`, `cross`, `cond`, `matrix_rank` |
+| **Advanced** | `kron`, `outer`, `inner`, `cross`, `cond`, `trace` |
 
 ---
 
