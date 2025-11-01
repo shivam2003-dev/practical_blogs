@@ -2,9 +2,9 @@
 
 Welcome to my comprehensive learning notes and study materials!
 
-This documentation is organized by semester and subject, providing in-depth coverage of mathematical foundations, machine learning, statistical methods, and deep neural networks.
+This documentation provides in-depth coverage of mathematical foundations, machine learning, statistical methods, and deep neural networks.
 
-## 📚 Semester 1
+## 📚 Subjects
 
 Explore the four core subjects:
 
