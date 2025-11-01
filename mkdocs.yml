@@ -1,0 +1,114 @@
+site_name: WILP MTech AI/ML Knowledge Base
+site_description: Comprehensive knowledge base for WILP MTech AI/ML program
+site_author: Shivam Kumar
+site_url: https://shivam2003-dev.github.io/practical_blogs
+
+repo_name: shivam2003-dev/practical_blogs
+repo_url: https://github.com/shivam2003-dev/practical_blogs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: README.md
+  - Semester 1:
+    - Mathematical Foundations:
+      - semester-1/mathematical-foundations/README.md
+      - Topics:
+        - Linear Algebra: semester-1/mathematical-foundations/topics/linear-algebra.md
+        - System of Two Linear Equations: semester-1/mathematical-foundations/topics/system-two-linear-equations.md
+        - Set Theory: semester-1/mathematical-foundations/topics/set-theory.md
+        - Probability: semester-1/mathematical-foundations/topics/probability.md
+        - Logic: semester-1/mathematical-foundations/topics/logic.md
+      - References: semester-1/mathematical-foundations/references.md
+    - Machine Learning:
+      - semester-1/machine-learning/README.md
+      - Topics:
+        - PCA: fit() and transform(): semester-1/machine-learning/topics/pca-fit-transform.md
+        - Supervised Learning: semester-1/machine-learning/topics/supervised-learning.md
+        - Unsupervised Learning: semester-1/machine-learning/topics/unsupervised-learning.md
+        - Model Evaluation: semester-1/machine-learning/topics/model-evaluation.md
+        - Feature Engineering: semester-1/machine-learning/topics/feature-engineering.md
+        - ML Pipelines: semester-1/machine-learning/topics/ml-pipelines.md
+      - References: semester-1/machine-learning/references.md
+    - Statistical Methods:
+      - semester-1/statistical-methods/README.md
+      - Topics:
+        - Descriptive Statistics: semester-1/statistical-methods/topics/descriptive-stats.md
+        - Hypothesis Testing: semester-1/statistical-methods/topics/hypothesis-testing.md
+        - Regression: semester-1/statistical-methods/topics/regression.md
+        - Bayesian Inference: semester-1/statistical-methods/topics/bayesian-inference.md
+      - References: semester-1/statistical-methods/references.md
+    - Deep Neural Networks:
+      - semester-1/deep-neural-networks/README.md
+      - Topics:
+        - Perceptron: semester-1/deep-neural-networks/topics/perceptron.md
+        - CNN: semester-1/deep-neural-networks/topics/cnn.md
+        - RNN: semester-1/deep-neural-networks/topics/rnn.md
+        - Optimization: semester-1/deep-neural-networks/topics/optimization.md
+        - Transfer Learning: semester-1/deep-neural-networks/topics/transfer-learning.md
+      - References: semester-1/deep-neural-networks/references.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shivam2003-dev
+

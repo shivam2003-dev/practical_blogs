@@ -1,0 +1,9 @@
+site/
+*.pyc
+__pycache__/
+.DS_Store
+.env
+.venv/
+venv/
+.python-version
+
