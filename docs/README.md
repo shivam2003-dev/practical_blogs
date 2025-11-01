@@ -1,6 +1,6 @@
-# 🎓 WILP MTech AI/ML Knowledge Base
+# 📚 Learning Notes
 
-Welcome to the comprehensive knowledge base for the **WILP MTech AI/ML** program!
+Welcome to my comprehensive learning notes and study materials!
 
 This documentation is organized by semester and subject, providing in-depth coverage of mathematical foundations, machine learning, statistical methods, and deep neural networks.
 
