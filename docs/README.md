@@ -8,39 +8,44 @@ This documentation provides in-depth coverage of mathematical foundations, machi
 
 ## 🎯 Quick Navigation
 
-<div class="grid cards" markdown>
+<div class="grid" markdown>
+:material-calculator-variant:{ .lg } 
 
--   :material-calculator-variant:{ .lg .middle } __Mathematical Foundations__
+**Mathematical Foundations**
 
-    ---
+Core mathematical concepts essential for AI and ML
 
-    Core mathematical concepts essential for AI and ML
+[Explore Topics :octicons-arrow-right-24:](semester-1/mathematical-foundations/README.md)
 
-    [:octicons-arrow-right-24: Explore Topics](semester-1/mathematical-foundations/README.md)
+---
 
--   :material-robot:{ .lg .middle } __Machine Learning__
+:material-robot:{ .lg } 
 
-    ---
+**Machine Learning**
 
-    Fundamental machine learning concepts and techniques
+Fundamental machine learning concepts and techniques
 
-    [:octicons-arrow-right-24: Explore Topics](semester-1/machine-learning/README.md)
+[Explore Topics :octicons-arrow-right-24:](semester-1/machine-learning/README.md)
 
--   :material-chart-line:{ .lg .middle } __Statistical Methods__
+---
 
-    ---
+:material-chart-line:{ .lg } 
 
-    Statistical theory and methods for data analysis
+**Statistical Methods**
 
-    [:octicons-arrow-right-24: Explore Topics](semester-1/statistical-methods/README.md)
+Statistical theory and methods for data analysis
 
--   :material-brain:{ .lg .middle } __Deep Neural Networks__
+[Explore Topics :octicons-arrow-right-24:](semester-1/statistical-methods/README.md)
 
-    ---
+---
 
-    Deep learning architectures and advanced AI techniques
+:material-brain:{ .lg } 
 
-    [:octicons-arrow-right-24: Explore Topics](semester-1/deep-neural-networks/README.md)
+**Deep Neural Networks**
+
+Deep learning architectures and advanced AI techniques
+
+[Explore Topics :octicons-arrow-right-24:](semester-1/deep-neural-networks/README.md)
 
 </div>
 
