@@ -96,53 +96,53 @@ aws acm request-certificate \
 
 ## 🚀 Challenge Problems
 
-<details>
-<summary>Challenge 1: Blue-Green Deployment with ALB 🟡</summary>
+??? question "Challenge 1: Blue-Green Deployment with ALB 🟡"
 
-**Problem**: Implement zero-downtime deployment using ALB target groups
+    **Problem**: Implement zero-downtime deployment using ALB target groups
 
-**Requirements**:
-- Create two target groups (blue and green)
-- Deploy new version to green
-- Gradually shift traffic using weighted routing
-- Automatic rollback on errors
+    **Requirements**:
+    
+    - Create two target groups (blue and green)
+    - Deploy new version to green
+    - Gradually shift traffic using weighted routing
+    - Automatic rollback on errors
 
-**Reference Articles**:
-- [Blue/Green Deployments](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html)
-- [Weighted Target Groups](https://aws.amazon.com/blogs/aws/new-application-load-balancer-simplifies-deployment-with-weighted-target-groups/)
-- [CodeDeploy with ALB](https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs-deployment.html)
+    **Reference Articles**:
+    
+    - [Blue/Green Deployments](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html)
+    - [Weighted Target Groups](https://aws.amazon.com/blogs/aws/new-application-load-balancer-simplifies-deployment-with-weighted-target-groups/)
+    - [CodeDeploy with ALB](https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs-deployment.html)
 
-**Key Concepts**:
-- Target group weights
-- Traffic shifting
-- Canary deployments
-- Rollback strategies
+    **Key Concepts**:
+    
+    - Target group weights
+    - Traffic shifting
+    - Canary deployments
+    - Rollback strategies
 
-</details>
+??? question "Challenge 2: Multi-Tier Architecture Routing 🟡"
 
-<details>
-<summary>Challenge 2: Multi-Tier Architecture Routing 🟡</summary>
+    **Problem**: Route traffic to different application tiers
 
-**Problem**: Route traffic to different application tiers
+    **Requirements**:
+    
+    - Frontend servers: `/` and `/static/*`
+    - API servers: `/api/*`
+    - Admin panel: `/admin/*`
+    - Microservices: `/service1/*`, `/service2/*`
 
-**Requirements**:
-- Frontend servers: `/` and `/static/*`
-- API servers: `/api/*`
-- Admin panel: `/admin/*`
-- Microservices: `/service1/*`, `/service2/*`
+    **Reference Articles**:
+    
+    - [Path-Based Routing](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-load-balancer-routing.html)
+    - [Host-Based Routing](https://aws.amazon.com/blogs/aws/new-host-based-routing-support-for-aws-application-load-balancers/)
+    - [Microservices with ALB](https://aws.amazon.com/blogs/compute/microservice-delivery-with-amazon-ecs-and-application-load-balancers/)
 
-**Reference Articles**:
-- [Path-Based Routing](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-load-balancer-routing.html)
-- [Host-Based Routing](https://aws.amazon.com/blogs/aws/new-host-based-routing-support-for-aws-application-load-balancers/)
-- [Microservices with ALB](https://aws.amazon.com/blogs/compute/microservice-delivery-with-amazon-ecs-and-application-load-balancers/)
-
-**Key Concepts**:
-- Listener rules priority
-- Path patterns
-- Host headers
-- Query string routing
-
-</details>
+    **Key Concepts**:
+    
+    - Listener rules priority
+    - Path patterns
+    - Host headers
+    - Query string routing
 
 <details>
 <summary>Challenge 3: WAF Integration for Security 🔴</summary>

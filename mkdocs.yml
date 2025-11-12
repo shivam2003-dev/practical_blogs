@@ -86,6 +86,7 @@ nav:
     - "References": semester-1/machine-learning/references.md
   - "🚀 DevOps Practice":
     - semester-1/devops-practice/README.md
+    - "Problem Bank": semester-1/devops-practice/problem-bank.md
     - "GitHub Actions Problems":
       - "01. Basic Workflow": semester-1/devops-practice/topics/github-actions/01-basic-workflow.md
       - "02. Node.js CI Pipeline": semester-1/devops-practice/topics/github-actions/02-nodejs-ci.md

@@ -444,75 +444,66 @@ echo "Website URL: http://$BUCKET_NAME.s3-website-$REGION.amazonaws.com"
 
 ## 🚀 Extensions & Challenges
 
-<details>
-<summary>Challenge 1: Add Custom Domain with Route 53</summary>
+??? question "Challenge 1: Add Custom Domain with Route 53"
 
-```bash
-# Create hosted zone
-aws route53 create-hosted-zone \
-    --name example.com \
-    --caller-reference $(date +%s)
+    ```bash
+    # Create hosted zone
+    aws route53 create-hosted-zone \
+        --name example.com \
+        --caller-reference $(date +%s)
 
-# Create record set for CloudFront
-aws route53 change-resource-record-sets \
-    --hosted-zone-id YOUR_ZONE_ID \
-    --change-batch file://dns-records.json
-```
+    # Create record set for CloudFront
+    aws route53 change-resource-record-sets \
+        --hosted-zone-id YOUR_ZONE_ID \
+        --change-batch file://dns-records.json
+    ```
 
-</details>
+??? question "Challenge 2: Enable Access Logging"
 
-<details>
-<summary>Challenge 2: Enable Access Logging</summary>
+    ```bash
+    # Create log bucket
+    aws s3 mb s3://logs-$BUCKET_NAME
 
-```bash
-# Create log bucket
-aws s3 mb s3://logs-$BUCKET_NAME
+    # Enable logging
+    aws s3api put-bucket-logging \
+        --bucket $BUCKET_NAME \
+        --bucket-logging-status file://logging-config.json
+    ```
 
-# Enable logging
-aws s3api put-bucket-logging \
-    --bucket $BUCKET_NAME \
-    --bucket-logging-status file://logging-config.json
-```
+??? question "Challenge 3: Automate with GitHub Actions"
 
-</details>
+    Create `.github/workflows/deploy-s3.yml`:
 
-<details>
-<summary>Challenge 3: Automate with GitHub Actions</summary>
+    ```yaml
+    name: Deploy to S3
 
-Create `.github/workflows/deploy-s3.yml`:
+    on:
+      push:
+        branches: [ main ]
 
-```yaml
-name: Deploy to S3
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v3
 
-on:
-  push:
-    branches: [ main ]
+          - name: Configure AWS credentials
+            uses: aws-actions/configure-aws-credentials@v2
+            with:
+              aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+              aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+              aws-region: us-east-1
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      
-      - name: Sync to S3
-        run: |
-          aws s3 sync . s3://${{ secrets.S3_BUCKET }} --delete
-          
-      - name: Invalidate CloudFront
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_ID }} \
-            --paths "/*"
-```
+          - name: Sync to S3
+            run: |
+              aws s3 sync . s3://${{ secrets.S3_BUCKET }} --delete
 
-</details>
+          - name: Invalidate CloudFront
+            run: |
+              aws cloudfront create-invalidation \
+                --distribution-id ${{ secrets.CLOUDFRONT_ID }} \
+                --paths "/*"
+    ```
 
 ---
 
