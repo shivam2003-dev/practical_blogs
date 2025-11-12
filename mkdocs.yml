@@ -84,43 +84,21 @@ nav:
     - "Topics":
       - "PCA: fit() and transform()": semester-1/machine-learning/topics/pca-fit-transform.md
     - "References": semester-1/machine-learning/references.md
-  - "📊 Statistical Methods":
-    - semester-1/statistical-methods/README.md
-    - "References": semester-1/statistical-methods/references.md
-  - "🧠 Deep Neural Networks":
-    - semester-1/deep-neural-networks/README.md
-    - "References": semester-1/deep-neural-networks/references.md
-  - "🔥 PyTorch Cheatsheet":
-    - "Overview": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/README.md
-    - "Complete Guide": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/GUIDE.md
-    - "Quick Reference": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/quick-reference.md
-    - "Debugging Checklist": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/debugging-checklist.md
-    - "Performance Tips": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/performance-tips.md
-    - "Fundamentals":
-      - "1. Introduction": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/01-introduction.md
-      - "2. Tensors Basics": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/02-tensors-basics.md
-      - "3. Tensor Operations": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/03-tensor-operations.md
-      - "4. Autograd": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/04-autograd.md
-    - "Neural Networks":
-      - "5. Neural Networks": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/05-neural-networks.md
-      - "6. Loss Functions": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/06-loss-functions.md
-      - "7. Optimizers": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/07-optimizers.md
-      - "8. Training Loop": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/08-training-loop.md
-    - "Data Handling":
-      - "9. Datasets & DataLoaders": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/09-datasets-dataloaders.md
-      - "10. Data Transformations": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/10-data-transformations.md
-      - "11. Custom Datasets": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/11-custom-datasets.md
-    - "Architectures":
-      - "12. CNNs": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/12-cnns.md
-      - "13. RNNs": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/13-rnns.md
-    - "Advanced":
-      - "14. Transfer Learning": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/14-transfer-learning.md
-      - "15. Model Saving": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/15-model-saving.md
-      - "16. GPU Acceleration": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/16-gpu-acceleration.md
-      - "17. Deployment": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/17-deployment.md
-      - "18. Debugging": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/18-debugging-visualization.md
-      - "19. Advanced Topics": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/19-advanced-topics.md
-      - "20. Best Practices": semester-1/deep-neural-networks/topics/pytorch-cheatsheet/20-best-practices.md
+  - "🚀 DevOps Practice":
+    - semester-1/devops-practice/README.md
+    - "GitHub Actions Problems":
+      - "01. Basic Workflow": semester-1/devops-practice/topics/github-actions/01-basic-workflow.md
+      - "02. Node.js CI Pipeline": semester-1/devops-practice/topics/github-actions/02-nodejs-ci.md
+      - "03. Docker Build & Push": semester-1/devops-practice/topics/github-actions/03-docker-workflow.md
+      - "04. Multi-Environment Deploy": semester-1/devops-practice/topics/github-actions/04-multi-environment.md
+    - "AWS Problems":
+      - "Overview": semester-1/devops-practice/topics/aws/README.md
+      - "01. S3 Static Website": semester-1/devops-practice/topics/aws/01-s3-static-website.md
+      - "02. EC2 Auto-Scaling": semester-1/devops-practice/topics/aws/02-ec2-deployment.md
+      - "03. Lambda API Gateway": semester-1/devops-practice/topics/aws/03-lambda-api.md
+      - "04. Application Load Balancer": semester-1/devops-practice/topics/aws/04-alb-routing.md
+      - "05. RDS Multi-AZ": semester-1/devops-practice/topics/aws/05-rds-database.md
+    - "References": semester-1/devops-practice/references.md
 
 extra:
   social:
